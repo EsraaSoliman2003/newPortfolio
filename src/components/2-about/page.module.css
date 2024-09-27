@@ -1,0 +1,14 @@
+.container{
+    /* background-color: rgba(0, 0, 0, 0.638); */
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #e3d2c42e;
+    border-bottom: 1px solid #e3d2c42e;
+    padding: 100px 0 ;
+  /* border: 2px solid red; */
+
+}
+.container ul{
+    font-size: 1.5rem;
+    margin-top: 40px;
+}

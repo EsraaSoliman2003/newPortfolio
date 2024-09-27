@@ -9,7 +9,7 @@ const tools = [
   },
   {
     title: 'CSS3',
-    icon: '/imgs/CSS3.png',
+    icon: '/imgs/css.svg',
   },
   {
     title: 'Bootstrap',
@@ -17,7 +17,7 @@ const tools = [
   },
   {
     title: 'JavaScript',
-    icon: '/imgs/JavaScript.png',
+    icon: '/imgs/javascript.svg',
   },
   {
     title: 'React',
@@ -34,7 +34,7 @@ const tools = [
   {
     title: 'MongoDB',
     icon: '/imgs/mongodb.webp',
-  }
+  },
 ]
 
 export default function Experience() {

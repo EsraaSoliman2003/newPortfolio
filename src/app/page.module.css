@@ -4,8 +4,9 @@
   right: 30px;
   z-index: 9999999999999999;
   cursor: pointer;
-  transform: scale(3);
-
+  transform: scale(2);
+  background-color: #47433f;
+  border-radius: 5px;
 
 }
 

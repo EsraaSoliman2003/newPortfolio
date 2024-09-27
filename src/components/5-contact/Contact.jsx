@@ -13,7 +13,7 @@ export default function Contact() {
     <div className={styles.contact}>
       <h1>Contact Us</h1>
 
-      <div className={styles.flex} style={{marginTop: "40px"}}>
+      <div className={styles.flex} style={{ marginTop: "40px" }}>
         <form onSubmit={handleSubmit} className={styles.form}>
           <div className={styles.flex}>
             <label className={styles.label} id="email">
@@ -23,7 +23,7 @@ export default function Contact() {
               required
               type="email"
               name="email"
-              className={styles.input}
+              className={`${styles.input} ${styles.email}`}
             />
             <ValidationError
               prefix="Email"

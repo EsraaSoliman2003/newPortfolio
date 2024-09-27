@@ -42,6 +42,7 @@ const myLinks = [
 ];
 
 export default function Home() {
+  const [showIcon, setShowIcon] = useState(false);
   const [showDrawer, setShowDrawer] = useState(false);
   const handClick = (buttonCategory) => {
     const section = document.getElementById(buttonCategory.toLowerCase());
@@ -49,6 +50,17 @@ export default function Home() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowIcon(window.innerWidth < 740);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // تحقق من الحجم عند التحميل
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [showIcon]);
 
   // تأثير لإغلاق الـ drawer عند النقر خارجها
   useEffect(() => {
@@ -70,12 +82,14 @@ export default function Home() {
 
   return (
     <div>
-      <MenuIcon
-        onClick={() => {
-          setShowDrawer(!showDrawer);
-        }}
-        className={styles.drawerIcon}
-      />
+      {showIcon && (
+        <MenuIcon
+          onClick={() => {
+            setShowDrawer(!showDrawer);
+          }}
+          className={styles.drawerIcon}
+        />
+      )}
 
       <div className={`${styles.drawer} ${showDrawer ? styles.show : ""}`}>
         <div className={styles.linksContainer}>

@@ -87,7 +87,7 @@
 
 .seeMore {
   margin-top: 20px;
-  padding: 0;
+  padding: 20px;
   background-color: #e3d2c4;
   border: none;
   border-radius: 50%;
@@ -107,8 +107,9 @@
   margin-top: 20px;
 }
 .more{
-  font-size: 4rem;
+  transform: scale(3);
+
 }
 .less{
-  font-size: 4rem;
+  transform: scale(3);
 }

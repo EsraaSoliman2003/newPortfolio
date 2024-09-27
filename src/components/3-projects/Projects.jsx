@@ -178,7 +178,7 @@ export default function Projects() {
           );
         })}
       </div>
-      <button onClick={handleToggleVisibility} className={`${styles.seeMore} ${isExpanded ? styles.seeLess: ""}`}>
+      <button onClick={handleToggleVisibility} className={isExpanded ? styles.seeLess : styles.seeMore}>
         {isExpanded ? (
           <ExpandLessIcon className={styles.more} />
         ) : (

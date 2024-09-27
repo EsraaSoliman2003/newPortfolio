@@ -97,19 +97,44 @@
   flex-direction: column;
   align-items: center;
   font-size: 2rem;
-
 }
 
 .seeMore:hover {
   background-color: #d2c1b4;
 }
-.seeLess{
+
+.seeLess {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e3d2c4;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
   margin-top: 20px;
 }
-.more{
+
+.more {
   transform: scale(3);
 
 }
-.less{
+
+.less {
   transform: scale(3);
+}
+
+@media (max-width: 632px) {
+  .seeMore {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translate(-50%);
+
+  }
+
+
 }

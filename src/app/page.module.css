@@ -5,7 +5,7 @@
   z-index: 9999999999999999;
   cursor: pointer;
   transform: scale(2);
-  background-color: #47433f;
+  background-color: #202020;
   border-radius: 5px;
 
 }
@@ -95,6 +95,7 @@
   } */
 }
 
+
 @media (max-width: 740px) {
   /* .drawerIcon {
     display: block;
@@ -102,11 +103,18 @@
 
   .drawer {
     width: 40%;
-    transform: translateX(-100%);
+    transform: translateX(-110%);
     align-items: start;
 
 
   }
+}
+
+@media (max-width: 740px) {
+  /* .drawerIcon {
+    display: block;
+  } */
+
 
   .icons {
     display: none;

@@ -46,6 +46,15 @@ const myProjects = [
     imhPath: "/imgs/4.jpg",
   },
   {
+    ProjectTitle: "Factory system",
+    num: 2,
+    date: "2025",
+    linkDesine: "https://sales-brown-six.vercel.app/",
+    linkGithub: "https://github.com/EsraaSoliman2003/Sales",
+    desc: "React & MUI & Many libraries",
+    imhPath: "/imgs/13.jpg",
+  },
+  {
     ProjectTitle: "Travel Website",
     num: 2,
     date: "2023",
@@ -102,7 +111,7 @@ const myProjects = [
   {
     ProjectTitle: "Bags Shop",
     num: 5,
-    date: "2026",
+    date: "2024",
     linkDesine: "https://bagsshop.surge.sh",
     linkGithub: "https://github.com/EsraaSoliman2003/BagsShop",
     desc: "React & MUI",
@@ -163,12 +172,12 @@ export default function Projects() {
                 <p className={styles.date}>{item.date}</p>
                 <div className={styles.desc}>{item.desc}</div>
                 <div className={styles.icons}>
-                  <button
+                  {/* <button
                     className={styles.btn}
                     onClick={() => window.open(item.linkGithub, "_blank")}
                   >
                     <GitHubIcon className={styles.icon} />
-                  </button>
+                  </button>*/}
                   <button className={styles.btn}>
                     <LinkIcon className={styles.icon} />
                   </button>
